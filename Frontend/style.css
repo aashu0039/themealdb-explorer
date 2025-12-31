@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-/* Header */
+
 header {
     background: #ff7043;
     color: white;
@@ -22,7 +22,7 @@ header h1 {
     font-size: 2.5rem;
 }
 
-/* Search */
+
 .search-section {
     text-align: center;
     margin: 25px;
@@ -49,7 +49,7 @@ header h1 {
     background: #43a047;
 }
 
-/* Grid */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -81,7 +81,7 @@ header h1 {
     padding: 10px;
 }
 
-/* Footer */
+
 footer {
     background: #333;
     color: white;
@@ -89,7 +89,7 @@ footer {
     padding: 15px;
 }
 
-/* 🔥 MODAL */
+
 .modal {
     display: none;
     position: fixed;
