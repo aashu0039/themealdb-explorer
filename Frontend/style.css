@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #ffecd2, #fcb69f);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Search */
+.search-section {
+    text-align: center;
+    margin: 25px;
+}
+
+.search-section input {
+    width: 260px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-section button {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background: #ff7043;
+    color: white;
+    cursor: pointer;
+}
+
+.random-btn {
+    background: #43a047;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 160px;
+    height: 150px;
+    position:left;
+    border-radius: 15px 15px 0 0;
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 🔥 MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: white;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-content img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-content a {
+    display: block;
+    text-align: center;
+    background: #ff7043;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
