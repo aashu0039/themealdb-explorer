@@ -1,6 +1,6 @@
 const backendUrl = "http://localhost:8080/api/meals";
 
-/* Search */
+
 function searchMeal() {
     const name = document.getElementById("searchInput").value;
     fetch(`${backendUrl}/search?name=${name}`)
@@ -8,14 +8,14 @@ function searchMeal() {
         .then(data => showMeals(data.meals));
 }
 
-/* Random */
+
 function randomMeal() {
     fetch(`${backendUrl}/random`)
         .then(res => res.json())
         .then(data => showMeals([data.meals[0]]));
 }
 
-/* Show Meals */
+
 function showMeals(meals) {
     const div = document.getElementById("meals");
     div.innerHTML = "";
@@ -36,7 +36,7 @@ function showMeals(meals) {
     });
 }
 
-/* 🔥 MODAL */
+
 function openModal(meal) {
     document.getElementById("mealModal").style.display = "block";
 
@@ -65,7 +65,7 @@ function closeModal() {
     document.getElementById("mealModal").style.display = "none";
 }
 
-/* Categories */
+
 function loadCategories() {
     fetch(`${backendUrl}/categories`)
         .then(res => res.json())
